@@ -10,8 +10,35 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("Хэлоу турбозавпраы");
+            List <int> list = new List<int>() {-3, 1, 3, 5, 8, 10, 12};
+
+                foreach (int i in list)
+                {
+                    Console.WriteLine("Список = "+i);
+                }
+
+                for (int i = 0; i < list.Count; i++)
+                {
+
+                    if (list[i]%5 == 0 ) 
+                    { 
+                    list.RemoveAt(i);
+                    }
+                
+                }
+
+            foreach (int i in list)
+            {
+                Console.WriteLine("Список после удаления = " + i);
+            }
+
+
+
+
+
             Console.ReadKey();
+            
+            
         }
     }
 }
