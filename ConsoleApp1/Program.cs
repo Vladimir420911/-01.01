@@ -29,7 +29,7 @@ namespace ConsoleApp1
 
             foreach (int i in list)
             {
-                Console.WriteLine("Список после удаления = " + i);
+                Console.WriteLine("Список после удаления= = " + i);
             }
 
 
