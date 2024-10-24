@@ -10,7 +10,12 @@ namespace ЛР2
     {
         static void Main(string[] args)
         {
-            гноогн
+            List<Товар> list = new List<Товар>
+            {
+            new Товар("Охота", 50),
+            new Товар("Балтика", 60),
+            };
+
         }
     }
 }
