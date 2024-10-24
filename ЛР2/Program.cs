@@ -10,6 +10,7 @@ namespace ЛР2
     {
         static void Main(string[] args)
         {
+            гноогн
         }
     }
 }
