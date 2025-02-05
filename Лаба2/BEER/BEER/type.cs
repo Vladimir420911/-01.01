@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ЛР2
+namespace BEER
 {
-    internal class Class1
+    public enum type
     {
+        alc,
+        nonalc
     }
 }

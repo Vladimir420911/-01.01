@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{245894DF-F560-41D4-A31D-BE17D69F01C0}</ProjectGuid>
+    <ProjectGuid>{7AAC65D4-8CE3-4C89-9BF5-C21176869358}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ЛР2</RootNamespace>
-    <AssemblyName>ЛР2</AssemblyName>
+    <RootNamespace>BEER</RootNamespace>
+    <AssemblyName>BEER</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Beer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sale.cs" />
+    <Compile Include="sales_history.cs" />
+    <Compile Include="type.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
