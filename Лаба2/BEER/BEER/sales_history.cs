@@ -31,7 +31,5 @@ namespace BEER
             }
             return report;
         }
-
-
     }
 }

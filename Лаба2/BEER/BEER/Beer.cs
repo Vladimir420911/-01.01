@@ -10,7 +10,6 @@ namespace BEER
     {
         public string name_;
         public double price_;
-        public string day_;
         public type beertype_;
 
 
