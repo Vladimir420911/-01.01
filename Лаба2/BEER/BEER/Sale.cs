@@ -12,7 +12,6 @@ namespace BEER
         public int Quantity;
         public string Day;
 
-
         public Sale(Beer beer, int quantity, string day)
         {
             Beer = beer;
