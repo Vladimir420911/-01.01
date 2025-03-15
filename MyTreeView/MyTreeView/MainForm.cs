@@ -23,6 +23,7 @@ namespace MyTreeView
             childModel = new TreeNodeChildModel();
 
         }
+        BindingList<TreeNodeChild> bind = new BindingList<TreeNodeChild>();
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -44,13 +45,13 @@ namespace MyTreeView
                 soup.AddChildNode("Борщ");
                 soup.AddChildNode("Щи");
             }
-
+            
             FillTreeNodeCollection(treeData_, treeView1.Nodes);
             treeView1.ExpandAll();
-
-            dataGridView1.Columns.Add("Name", "Наименование");
-            dataGridView1.Columns.Add("Description", "Описание");
-            dataGridView1.Columns.Add("Price", "Цена");
+            dataGridView1.DataSource = bind;
+            //dataGridView1.Columns.Add("Name", "Наименование");
+            //dataGridView1.Columns.Add("Description", "Описание");
+            //dataGridView1.Columns.Add("Price", "Цена");
         }
 
         static private void FillTreeNodeCollection(List<TreeNodeModel> sourceData,
@@ -75,10 +76,13 @@ namespace MyTreeView
                 TreeNodeChild Ch = childModel.GetName(e.Node.Text);
                 if(Ch != null)
                 {
-                    object[] newRow = { Ch.Name, Ch.Description, Ch.Price };
-                    dataGridView1.Rows.Add(newRow);
+                    //object[] newRow = { Ch.Name, Ch.Description, Ch.Price };
+                    //dataGridView1.Rows.Add(newRow);
+                    bind.Add(Ch);
                 }
             }
         }
+
+        
     }
 }
