@@ -12,9 +12,11 @@ namespace BindingListExample
 {
     public partial class Form1: Form
     {
+        BindingList<Food> bind = new BindingList<Food>();
         public Form1()
         {
             InitializeComponent();
         }
+        
     }
 }

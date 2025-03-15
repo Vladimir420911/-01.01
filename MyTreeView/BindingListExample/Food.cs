@@ -11,5 +11,6 @@ namespace BindingListExample
         public string Name { get; set; }
         public DateTime expireDate { get; set; }
         public int price { get; set; }
+
     }
 }
