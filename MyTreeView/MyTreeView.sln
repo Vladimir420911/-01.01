@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTreeView", "MyTreeView\MyTreeView.csproj", "{3F2D5A69-71CC-413E-A543-E74F27BDB047}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLib", "ClassLib\ClassLib.csproj", "{A7F6A97D-AADB-41DA-AD2B-EC6205A2BD6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingListExample", "BindingListExample\BindingListExample.csproj", "{5208F0C1-FC30-44CC-80F6-DCDB9EEF617B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A7F6A97D-AADB-41DA-AD2B-EC6205A2BD6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F6A97D-AADB-41DA-AD2B-EC6205A2BD6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7F6A97D-AADB-41DA-AD2B-EC6205A2BD6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5208F0C1-FC30-44CC-80F6-DCDB9EEF617B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5208F0C1-FC30-44CC-80F6-DCDB9EEF617B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5208F0C1-FC30-44CC-80F6-DCDB9EEF617B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5208F0C1-FC30-44CC-80F6-DCDB9EEF617B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
