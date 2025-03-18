@@ -52,6 +52,7 @@
             this.Delete.TabIndex = 1;
             this.Delete.Text = "Удалить";
             this.Delete.UseVisualStyleBackColor = true;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
             // Edit
             // 
@@ -59,8 +60,9 @@
             this.Edit.Name = "Edit";
             this.Edit.Size = new System.Drawing.Size(75, 23);
             this.Edit.TabIndex = 2;
-            this.Edit.Text = "Редактировать";
+            this.Edit.Text = "Добавить";
             this.Edit.UseVisualStyleBackColor = true;
+            this.Edit.Click += new System.EventHandler(this.Edit_Click);
             // 
             // dataGridView1
             // 
@@ -69,6 +71,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // Form1
             // 

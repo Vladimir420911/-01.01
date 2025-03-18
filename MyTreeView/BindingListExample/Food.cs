@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace BindingListExample
 {
-    public class Food
+    class Food
     {
         public string Name { get; set; }
-        public DateTime expireDate { get; set; }
-        public int price { get; set; }
+        public DateTime ExpireDate { get; set; }
+        public int Price { get; set; }
 
+        public Food(string name, DateTime expireDate, int price)
+        {
+            Name = name;
+            ExpireDate = expireDate;
+            Price = price;
+        }
     }
 }

@@ -45,7 +45,6 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 20);
             this.nameTextBox.TabIndex = 0;
-            this.nameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -82,6 +81,7 @@
             this.okButton.TabIndex = 6;
             this.okButton.Text = "ОК";
             this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // priceUpDown
             // 
@@ -105,6 +105,7 @@
             this.cancelButton.TabIndex = 9;
             this.cancelButton.Text = "Отмена";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // EditForm
             // 
