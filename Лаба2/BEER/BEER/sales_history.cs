@@ -27,7 +27,7 @@ namespace BEER
                     report[sale.Day][type.alc] = 0;
                     report[sale.Day][type.nonalc] = 0;
                 }
-                report[sale.Day][sale.Beer.beertype_] += sale.Beer.price_ * sale.Quantity;
+                report[sale.Day][sale.Beer.GetBeerType()] += sale.Beer.GetPrice() * sale.Quantity;
             }
             return report;
         }
