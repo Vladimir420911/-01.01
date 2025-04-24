@@ -8,26 +8,16 @@ namespace BEER
 {
     public class Beer
     {
-        private string name_;
-        private double price_;
-        private type beertype_;
+        public string Name;
+        public double Price;
+        public type BeerType;
 
 
         public Beer(string n, double p, type bt)
         {
-            name_ = n;
-            price_ = p;
-            beertype_ = bt;
-        }
-
-        public type GetBeerType()
-        {
-            return beertype_;
-        }
-
-        public double GetPrice() 
-        {
-            return price_;
+            Name = n;
+            Price = p;
+            BeerType = bt;
         }
     }
 }
