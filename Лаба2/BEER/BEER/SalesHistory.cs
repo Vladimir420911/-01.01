@@ -21,13 +21,13 @@ namespace BEER
 
             foreach (var sale in sales)
             {
-                if (!report.ContainsKey(sale.GetDay()))
+                if (!report.ContainsKey(sale.Day))
                 {
-                    report[sale.GetDay()] = new Dictionary<type, double>();
-                    report[sale.GetDay()][type.alc] = 0;
-                    report[sale.GetDay()][type.nonalc] = 0;
+                    report[sale.Day] = new Dictionary<type, double>();
+                    report[sale.Day][type.alc] = 0;
+                    report[sale.Day][type.nonalc] = 0;
                 }
-                report[sale.GetDay()][sale.GetBeer().BeerType] += sale.GetBeer().Price * sale.GetQuantity();
+                report[sale.Day][sale.Beer.GetBeerType()] += sale.Beer.GetPrice() * sale.Quantity;
             }
             return report;
         }

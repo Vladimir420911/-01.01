@@ -8,9 +8,9 @@ namespace BEER
 {
     public class Beer
     {
-        public string Name;
-        public double Price;
-        public type BeerType;
+        private string Name;
+        private double Price;
+        private type BeerType;
 
 
         public Beer(string n, double p, type bt)
@@ -18,6 +18,16 @@ namespace BEER
             Name = n;
             Price = p;
             BeerType = bt;
+        }
+
+        public double GetPrice()
+        {
+            return Price;
+        }
+
+        public type GetBeerType()
+        {
+            return BeerType;
         }
     }
 }
